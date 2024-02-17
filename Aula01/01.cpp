@@ -8,8 +8,11 @@ int square( int y )
 }
 
 int main(int argc, char *argv[]){
-   int x;
-   for ( x = 1; x <= 10; x++ ) {
+   cout << argv[1] << endl;
+   
+   int x = atoi(argv[1]);
+   
+   for ( x = 1; x <= atoi(argv[1]); x++ ) {
       cout << " " << square(x) << "  ";
    }
    cout << endl;
