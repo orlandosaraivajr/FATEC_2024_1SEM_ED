@@ -23,18 +23,20 @@ int main(int argc, char *argv[]){
         float nota_2;
     };
 
-    struct cadastro vetor_aluno;
+    struct cadastro cadastro01;
 
-    vetor_aluno.nome = recebe_nome_aluno();
-    vetor_aluno.disciplina = recebe_disciplina_aluno();
-    vetor_aluno.nota_1 = recebe_nota_1();
-    vetor_aluno.nota_2 = recebe_nota_2();
+    struct cadastro cadastro02;
+    
+    cadastro01.nome = recebe_nome_aluno();
+    cadastro01.disciplina = recebe_disciplina_aluno();
+    cadastro01.nota_1 = recebe_nota_1();
+    cadastro01.nota_2 = recebe_nota_2();
 
-    cout << "Nome = " << vetor_aluno.nome << endl;
-    cout << "Disciplina = " << vetor_aluno.disciplina << endl;
-    cout << "Nota 1 = " << vetor_aluno.nota_1 << endl;
-    cout << "Nota 2 = " << vetor_aluno.nota_2 << endl;
-    cout << "Média Simples = " << (vetor_aluno.nota_1 + vetor_aluno.nota_2) / 2 << endl;
+    cout << "Nome = " << cadastro01.nome << endl;
+    cout << "Disciplina = " << cadastro01.disciplina << endl;
+    cout << "Nota 1 = " << cadastro01.nota_1 << endl;
+    cout << "Nota 2 = " << cadastro01.nota_2 << endl;
+    cout << "Média Simples = " << (cadastro01.nota_1 + cadastro01.nota_2) / 2 << endl;
     return 0;
 }
 
